@@ -109,6 +109,15 @@ class BaseModel {
 
         return $result;
     }
+    public function first()
+    {
+       $list = $this->get();
+       if(count($list) > 0) {
+           return $list[0];
+       } else {
+           return null;
+       }
+    }
     public function delete()
     {
         $this->sql = "DELETE FROM $this->table WHERE id = $this->id";
@@ -141,4 +150,5 @@ class BaseModel {
             var_dump($e->getMessage());die;
         }
     }
+    // req.body 
 }

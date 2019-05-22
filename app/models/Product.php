@@ -15,4 +15,12 @@ class Product extends BaseModel {
             'category_id', 
             'stock'
         ];
+        public function getCateName($cateId) {
+            $product = self::find($cateId);
+            if($product){
+                return $product->name;
+            } else {
+                return 'khong danh muc';
+            }
+        }
 }

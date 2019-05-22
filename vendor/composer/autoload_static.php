@@ -24,6 +24,7 @@ class ComposerStaticInitf932906c05539a3ad593683f4afefe55
         'App\\Controller\\BaseController' => __DIR__ . '/../..' . '/app/controllers/BaseController.php',
         'App\\Controller\\HomeController' => __DIR__ . '/../..' . '/app/controllers/HomeController.php',
         'App\\Controller\\ProductController' => __DIR__ . '/../..' . '/app/controllers/ProductController.php',
+        'App\\Controller\\UserController' => __DIR__ . '/../..' . '/app/controllers/UserController.php',
         'App\\Model\\BaseModel' => __DIR__ . '/../..' . '/app/models/BaseModel.php',
         'App\\Model\\Category' => __DIR__ . '/../..' . '/app/models/Category.php',
         'App\\Model\\Product' => __DIR__ . '/../..' . '/app/models/Product.php',

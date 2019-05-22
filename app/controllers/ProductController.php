@@ -5,7 +5,14 @@ use App\Model\User;
 use App\Model\Category;
 
 class ProductController extends BaseController {
-    
+    public function __construct()
+    {
+        $this->base_url = 'http://localhost/hvcg/2019/nguyen_ngoc/oop_mvc/';
+
+        if(!$_SESSION['auth'] || $_SESSION['auth'] == null){
+            header('location: '.$this->base_url.'login');
+        }
+    }
     public function index()
     {
         $path = "";
@@ -44,4 +51,11 @@ class ProductController extends BaseController {
         $product->save();
         header("location: ".$this->base_url."products");
     }
+    public function edit()
+    {
+        dd('edit');
+    }
+    // public function getCateName($cateId) {
+    //     dd($cateId);
+    // }
 }
